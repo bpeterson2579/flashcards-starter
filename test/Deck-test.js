@@ -5,17 +5,17 @@ const Deck = require('../src/Deck');
 
 describe('Deck', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Deck);
   });
 
-  it.skip('should be an instance of Deck', function() {
+  it('should be an instance of Deck', function() {
     const deck = new Deck();
 
     assert.instanceOf(deck, Deck);
   });
 
-  it.skip('should store multiple cards in the deck', function() {
+  it('should store multiple cards in the deck', function() {
     const card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
     const card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
     const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
@@ -27,7 +27,7 @@ describe('Deck', function() {
     assert.equal(deck.cards, cards);
   });
 
-  it.skip('should count the number of cards in the deck', function() {
+  it('should count the number of cards in the deck', function() {
     const card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
     const card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
     const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
